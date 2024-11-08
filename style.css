@@ -1,0 +1,78 @@
+/* селекторы элементов + наследование ко всем заголовкам*/
+body{
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: fantasy;
+}
+button{
+    padding: 20px 60px;
+    margin: 10px;
+    border-color: #FFF;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+/* селектор псевдокласса */
+button:hover {
+    background-color: #FFF;
+    color: #000;
+}
+/* селектор потомств */
+.header{
+    text-align: center;
+    color: #FFF;
+}
+.header h1{
+    font-size: 30px;
+    margin: -5px;
+}
+.header h3{
+    font-size: 20px;
+    margin: -5px;
+}
+/* селекторы классов */
+.container {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    margin: 0 auto; 
+}
+.left-block {
+    padding: 10px;
+    left: 10%;
+}
+#axis {
+    width: 30%;
+    padding: 10px;
+    left: 35%; 
+    align-content: center;
+}
+.right-block {
+    padding: 10px;
+}
+/* селектор дочерних элементов */
+.right-block > h4{
+    font-family:'Times New Roman', Times, serif;
+}
+.error-label{
+   display: block;
+   margin-bottom: 20px; 
+}
+/* каскадирование */
+h1.results{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+/* отсутупы элементов ввода задаются в пикселях */
+input[type="text"]{
+    padding: 10px;
+}
+
+
